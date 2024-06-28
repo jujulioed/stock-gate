@@ -2,7 +2,7 @@ services:
   mysql-db:
     image: mysql:latest
     ports:
-      - "3050:3306"
+      - "27017:27017"
     volumes:
       - mysql-volume:/data/db
     restart: always
@@ -14,7 +14,7 @@ services:
     build: ./backend
     restart: always
     ports:
-      - 5005:5002
+      - 5002:5002
     depends_on:
       - mysql-db
     env_file:
