@@ -1,0 +1,60 @@
+.add-item {
+    padding: 20px;
+    background-color: #232e4e;
+    color: #fefefe;
+    margin-bottom: 20px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.add-item h2 {
+    margin-top: 0;
+}
+
+.add-item input[type="text"],
+.add-item input[type="url"],
+.add-item input[type="date"],
+.add-item input[type="number"],
+.add-item button[type="submit"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+.add-item button {
+    color: #fefefe;
+    border: none;
+    cursor: pointer;
+    background-color: #ffb274;
+}
+
+.input-container {
+    display: flex;
+    align-items: center;
+}
+
+.quantity-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 100%;
+}
+
+.quantity-container input[type="number"] {
+    flex-grow: 1;
+}
+
+.unit-display {
+    background-color: white;
+    color: black;
+    padding: 8px;
+    margin-left: 10px;
+    box-sizing: border-box;
+    text-align: center;
+    height: 38px; /* Ajuste para alinhar com o campo de entrada de quantidade */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

@@ -1,0 +1,35 @@
+/* components/ShoppingListMenuBar/index.css */
+.shopping-list-menu-bar {
+    background-color: #3b4569;
+    padding: 10px;
+  }
+  
+  .ul-shopping-list-menu-bar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .li-shopping-list-menu-bar {
+    margin: 0 10px;
+  }
+  
+  .li-shopping-list-menu-bar button {
+    background-color: #3b4569;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    color: white;
+    border-left: 2px solid #ffb274;
+    border-right: 2px solid #ffb274;
+  }
+  
+  .li-shopping-list-menu-bar button:hover {
+    background-color: #232e4e;
+    border-left: 2px solid #ffb274;
+    border-right: 2px solid #ffb274;
+  }
+  

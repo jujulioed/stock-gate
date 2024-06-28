@@ -1,0 +1,15 @@
+* {
+    margin: 0px;
+}
+
+.btn-a {
+    border-radius: 5px;
+    color: white;
+    background-color: black;
+    padding: 3px;
+}
+
+.btn-a:hover {
+    color: black;
+    background-color: white;
+}

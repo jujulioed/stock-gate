@@ -1,0 +1,24 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Configurações básicas para o body */
+  body {
+    font-family: Arial, sans-serif; /* Ou qualquer fonte de sua escolha */
+    background-color: #f8f9fa; /* Ou a cor de fundo de sua escolha */
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    padding: 20px;
+    margin: 0 auto;
+  }
+
+
+
+.view {
+  margin-bottom: 80px;
+}

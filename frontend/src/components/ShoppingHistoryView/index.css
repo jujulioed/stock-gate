@@ -1,0 +1,36 @@
+.shopping-history-view {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centraliza horizontalmente */
+  justify-content: center; /* Centraliza verticalmente */
+  text-align: center; /* Centraliza o texto */
+  margin: 20px;
+}
+
+.history-entry {
+  width: 80%; /* Ajuste a largura conforme necessário */
+  background-color: #f9f9f9; /* Adiciona um fundo para destacar as entradas */
+  margin-bottom: 20px;
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 8px; /* Adiciona cantos arredondados */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra para destaque */
+}
+
+.history-date {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.history-item-list {
+  list-style-type: none; /* Remove as bolinhas da lista */
+  padding: 0;
+  margin: 0;
+}
+
+.history-item-list li {
+  background-color: #e3e3e3; /* Adiciona um fundo para cada item */
+  margin-bottom: 5px;
+  padding: 5px;
+  border-radius: 4px; /* Adiciona cantos arredondados */
+}

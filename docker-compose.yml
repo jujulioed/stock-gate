@@ -1,0 +1,47 @@
+services:
+  mysql-db:
+    image: mysql:latest
+    ports:
+      - "3050:3306"
+    volumes:
+      - mysql-volume:/data/db
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: sqjbf@45¨2342!%sAAsfFG
+
+  api:
+    container_name: api-stock-gate
+    build: ./backend
+    restart: always
+    ports:
+      - 5005:5002
+    depends_on:
+      - mysql-db
+    env_file:
+      - ./backend/.env
+
+  spa:
+    container_name: frontend-stock-gate
+    build: ./frontend
+    depends_on:
+      - api
+    env_file:
+      - ./frontend/.env
+    volumes:
+      - spa-volume:/var/www/html
+
+  nginx:
+    container_name: nginx-container_name
+    build: ./nginx
+    ports:
+      - 80:80
+    volumes:
+      - spa-volume:/var/www/html
+    depends_on:
+      - mysql-db
+      - api
+      - spa
+
+volumes:
+  mysql-volume:
+  spa-volume:

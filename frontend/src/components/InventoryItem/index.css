@@ -1,0 +1,139 @@
+/* index.css */
+.item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #3b4569;
+  padding: 10px 0;
+  flex-wrap: wrap;
+}
+
+.item h3 {
+  margin-top: 0;
+}
+
+.btn-group {
+  margin-top: 10px;
+}
+
+.item-content {
+  flex-grow: 1;
+  min-width: 200px; /* Ajuste conforme necessário */
+}
+
+.last-update {
+  font-size: 12px;
+}
+
+.stock-change-id {
+  display: none;
+}
+
+.change-values {
+  padding: 10px;
+  margin-right: 10px;
+  font-size: 18px;
+  width: 80px;
+}
+
+.item-slot-set {
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap; /* Garante que os campos fiquem lado a lado */
+}
+
+.unit-style {
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-right: 10px;
+  font-weight: bold;
+}
+
+.item-quantity {
+  font-size: 18px;
+  background-color: #3b4569;
+  color: white;
+  margin-right: 25px;
+  padding-left: 2px;
+}
+
+.checkbox-container {
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+}
+
+.shopping-list-summary {
+  margin-top: 20px;
+}
+
+.shopping-list-summary h2 {
+  margin-bottom: 10px;
+}
+
+.shopping-list-summary ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.shopping-list-summary li {
+  background-color: #3b4569;
+  color: white;
+  padding: 5px 10px;
+  margin: 5px 0;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .item-slot-set {
+    justify-content: flex-start;
+    width: 100%;
+  }
+
+  .item-quantity {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .change-values {
+    width: 60px; /* Ajuste conforme necessário */
+    margin-bottom: 10px;
+  }
+
+  .unit-style {
+    margin-right: 10px;
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .item-content {
+    width: 100%;
+  }
+
+  .item-slot-set {
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  .change-values {
+    width: 60px; /* Ajuste conforme necessário */
+  }
+
+  label {
+    width: 100%;
+    margin-top: 10px;
+  }
+}
+
+.error {
+  color: red;
+  font-size: 12px;
+  margin-top: 5px;
+}

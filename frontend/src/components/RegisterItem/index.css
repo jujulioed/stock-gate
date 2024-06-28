@@ -1,0 +1,37 @@
+.registerItemContainer {
+    padding-top: 20px;
+}
+
+.add-item {
+    padding: 20px;
+    background-color: #232e4e;
+    color: #fefefe;
+    margin-bottom: 20px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.add-item h2 {
+    margin-top: 0;
+}
+
+.add-item input[type="text"],
+.add-item input[type="url"],
+.add-item input[type="date"],
+.add-item input[type="number"],
+.add-item button[type="submit"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+.add-item button {
+    color: #fefefe;
+    border: none;
+    cursor: pointer;
+    background-color: #ffb274;
+}
+
+

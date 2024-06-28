@@ -1,0 +1,26 @@
+/* History.css */
+.history-view {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+}
+
+.history-entry {
+    width: 80%;
+    background-color: #f0f0f0;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.history-entry h3 {
+    margin-top: 0;
+    font-size: 18px;
+    color: #3b4569;
+}
+
+.history-entry p {
+    margin: 5px 0;
+}

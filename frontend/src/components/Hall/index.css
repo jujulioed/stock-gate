@@ -1,0 +1,129 @@
+/* Estilos gerais */
+header {
+    background-color: #00192d;
+    color: #fefefe;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.title {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    border-bottom: 2px solid #ffb274;
+}
+
+.ul-menu-bar {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.li-menu-bar {
+    padding: 10px;
+    border-left: 2px solid #ffb274;
+    border-right: 2px solid #ffb274;
+    text-align: center;
+}
+
+.li-menu-bar:hover {
+    background-color: #3b4569;
+    border-bottom: 2px solid #ffb274;
+    margin-bottom: -2px;
+}
+
+.li-menu-bar button {
+    align-items: center;
+    border: none;
+    background-color: transparent;
+    color: white;
+}
+
+.li-logout-bar {
+    padding: 10px;
+    border-left: 2px solid #ffb274;
+    border-right: 2px solid #ffb274;
+    text-align: center;
+}
+
+.li-logout-bar:hover {
+    background-color: #3b4569;
+    border-bottom: 2px solid #ffb274;
+    margin-bottom: -2px;
+}
+
+.li-logout-bar button {
+    align-items: center;
+    border: none;
+    background-color: transparent;
+    color: white;
+}
+
+.menu-bar {
+    margin-right: auto;
+    margin-left: auto;
+    align-items: center;
+    text-align: center;
+}
+
+/* Estilos para dispositivos móveis */
+@media (max-width: 768px) {
+    .title {
+        width: 100%;
+    }
+
+    .hamburger {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        padding: 10px;
+        background-color: transparent;
+        border: none;
+        outline: none;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .hamburger div {
+        width: 25px;
+        height: 3px;
+        background-color: #fefefe;
+        margin: 4px 0;
+        transition: 0.4s;
+    }
+
+    .ul-menu-bar {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        padding: 0;
+    }
+
+    .li-menu-bar {
+        width: 100%;
+        text-align: center;
+        border: none;
+        border-bottom: 1px solid #ffb274;
+    }
+
+    .li-logout-bar {
+        width: 100%;
+        text-align: center;
+        border: none;
+        border-bottom: 1px solid #ffb274;
+        background-color: rgba(220, 53, 70, 0.5);
+    }
+
+    .li-menu-bar:last-child {
+        border-bottom: none;
+    }
+
+    .menu-bar.active .ul-menu-bar {
+        display: flex;
+    }
+}

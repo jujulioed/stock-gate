@@ -1,0 +1,36 @@
+/* EditItem/index.css */
+.edit-item {
+    padding: 20px;
+    background-color: #232e4e;
+    color: #fefefe;
+    margin-bottom: 20px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.edit-item h2 {
+    margin-top: 0;
+}
+
+.edit-item input[type="text"],
+.edit-item textarea,
+.edit-item input[type="number"],
+.edit-item button[type="submit"],
+.edit-item button.delete-button {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+.edit-item button {
+    color: #fefefe;
+    border: none;
+    cursor: pointer;
+    background-color: #ffb274;
+}
+
+.edit-item button.delete-button {
+    background-color: #ff4c4c;
+}
