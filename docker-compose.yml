@@ -31,7 +31,7 @@ services:
       - spa-volume:/var/www/html
 
   nginx:
-    container_name: nginx-container_name
+    container_name: nginx-stock-gate
     build: ./nginx
     ports:
       - 80:80
