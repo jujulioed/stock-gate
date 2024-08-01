@@ -14,7 +14,7 @@ function Login() {
     const handleSubmit = (event) => {
 
         event.preventDefault();
-        axios.post(`${process.env.REACT_APP_API_URL}/login`, values)
+        axios.post(`http://18.189.188.255/login`, values)
         .then(res => {
             if (res.data.Status === "Success") {
                 navigate('/');

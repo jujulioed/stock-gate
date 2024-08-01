@@ -22,7 +22,7 @@ services:
 
   spa:
     container_name: frontend-stock-gate
-    build: ./frontend
+    build: ./frontend/build
     depends_on:
       - api
     env_file:
